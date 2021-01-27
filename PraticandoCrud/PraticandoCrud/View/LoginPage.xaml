@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PraticandoCrud.View.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Margin="30.0">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="90*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="user2" Grid.Row="0" Grid.Column="0"/>
+                <Entry Placeholder="Digite su nombre" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" VerticalOptions="Center"/>
+            </Grid>
+
+
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="90*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="pass2" Grid.Row="0" Grid.Column="0"/>
+                <Entry Placeholder="Digite su pass" IsPassword="True" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" VerticalOptions="Center" Text="{Binding PasswordTxt,Mode=TwoWay}"/>
+            </Grid>
+
+
+            <StackLayout Grid.Row="1">
+                <Button  Text="Register"   HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="Blue" BorderWidth="80"  Clicked="IngresarRegistro_Cliked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

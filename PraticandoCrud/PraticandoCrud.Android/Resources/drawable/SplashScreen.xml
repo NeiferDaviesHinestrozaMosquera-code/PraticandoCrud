@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: https://aka.ms/android-menu-resource-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <color android:color="@color/colorSplashScreen"/>
+  </item>
+  <item>
+    <bitmap android:src="@drawable/tnt"
+            android:tileMode="disabled"
+            android:gravity="center"/>
+  </item>
+</layer-list>

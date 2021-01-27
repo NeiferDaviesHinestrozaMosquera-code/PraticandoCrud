@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PraticandoCrud.View.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <Label Text="Registro" FontSize="50" VerticalOptions="CenterAndExpand" TextColor="Blue"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                    <Entry Keyboard="Text" Placeholder="Digite su nombre de usuario"  FontSize="16" x:Name="EntryUserName" Text="{Binding UserNameTxt , Mode=TwoWay}"/>
+                </StackLayout>
+                <StackLayout  Grid.Row="2">
+                    <Entry Keyboard="Text" Placeholder="Password" IsPassword="true" FontSize="16" x:Name="EntryUserPassword" Text="{Binding PasswordTxt, Mode=TwoWay}"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3">
+                    <Entry Keyboard="Text" Placeholder="Email" FontSize="16" x:Name="EntryUserEmail" Text="{Binding EmailTxt}"/>
+                </StackLayout>
+                <StackLayout Grid.Row="4">
+                    <Entry Keyboard="Telephone" MaxLength="10" Placeholder="PhoneNumber" FontSize="16" x:Name="EntryUserPhoneNumber" Text="{Binding PhoneNumberTxt}"/>
+                </StackLayout>
+                <StackLayout Grid.Row="5">
+                    <Button Text="Register" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" Background="Blue" Command="{Binding RegisterCommand}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="6">
+                    <Button Text="Login" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="white" BackgroundColor="red" Clicked="IngresarLogin_Cliked"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

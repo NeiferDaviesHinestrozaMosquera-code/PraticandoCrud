@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:locals="clr-namespace:PraticandoCrud.View.Tabbed"
+             x:Class="PraticandoCrud.View.Tabbed.TabbedPage1"
+            
+             Title="Tabbed Video"
+            BarTextColor="Black" BarBackgroundColor="#157545"   SelectedTabColor="Black" UnselectedTabColor="White"
+            >
+    <locals:Page1 Title="Esta es la Page1" IconImageSource="casa" />
+    <locals:Page2 Title="Esta es la Page2" IconImageSource="salir" />
+
+
+</TabbedPage>
